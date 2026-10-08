@@ -1,0 +1,89 @@
+\begin{landscape}
+\begingroup\footnotesize
+\begin{longtable}{r l l l r r r r r c}
+\caption{One-vs-rest logistic regression on the 20 strongest LASSO regressors, KM-PC2 clustering, $k = 3$.}\label{tab:logit-KMPC2-k3}\\
+\toprule
+\# & Variable & Type & Contrast & Estimate & SE & $z$ & $p$ & OR & 95\% CI \\
+\midrule
+\endfirsthead
+\multicolumn{9}{l}{\emph{\tablename\ \thetable{} -- continued}}\\
+\toprule
+\# & Variable & Type & Contrast & Estimate & SE & $z$ & $p$ & OR & 95\% CI \\
+\midrule
+\endhead
+\midrule \multicolumn{9}{r}{\emph{continued on next page}}\\
+\endfoot
+\bottomrule
+\endlastfoot
+\multicolumn{9}{l}{\textbf{Cluster 1} \quad \small $n = 2579$ ($n_{\text{in}} = 771$), AIC $= 1244.2$, residual deviance $= 1202.2$ on 2558 df}\\[2pt]
+\rowcolor{gray!12}  & (Intercept) & intercept & -- & 0.643 & 0.441 & 1.46 & 0.145 & 1.903 & [0.801,\,4.518] &  \\
+1 & Q55 & ordinal & per step & -1.180 & 0.192 & -6.14 & $8.3{\times}10^{-10}$ & 0.307 & [0.211,\,0.448] &  \\
+2 & Q81 & ordinal & per step & 0.680 & 0.118 & 5.74 & $9.3{\times}10^{-9}$ & 1.974 & [1.565,\,2.490] &  \\
+3 & Q57 & dummy & Need to be very careful & 0.840 & 0.184 & 4.57 & $4.9{\times}10^{-6}$ & 2.317 & [1.616,\,3.323] &  \\
+4 & Q18 & dummy & Mentioned & -1.455 & 0.362 & -4.02 & $5.8{\times}10^{-5}$ & 0.234 & [0.115,\,0.474] &  \\
+5 & Q69 & ordinal & per step & 0.783 & 0.108 & 7.23 & $4.9{\times}10^{-13}$ & 2.189 & [1.770,\,2.707] &  \\
+6 & Q89 & ordinal & per step & 0.655 & 0.143 & 4.57 & $4.9{\times}10^{-6}$ & 1.925 & [1.453,\,2.549] &  \\
+7 & Q63 & ordinal & per step & 0.701 & 0.173 & 4.05 & $5.0{\times}10^{-5}$ & 2.015 & [1.436,\,2.827] &  \\
+8 & Q165 & dummy & Yes & 0.616 & 0.205 & 3.01 & 0.003 & 1.851 & [1.239,\,2.766] &  \\
+9 & Q130 & ordinal & per step & 0.671 & 0.115 & 5.84 & $5.2{\times}10^{-9}$ & 1.956 & [1.561,\,2.449] &  \\
+10 & Q51 & ordinal & per step & -0.841 & 0.106 & -7.93 & $2.2{\times}10^{-15}$ & 0.431 & [0.350,\,0.531] &  \\
+11 & Q80 & ordinal & per step & 0.657 & 0.119 & 5.50 & $3.7{\times}10^{-8}$ & 1.928 & [1.526,\,2.436] &  \\
+12 & Q62 & ordinal & per step & 0.608 & 0.167 & 3.64 & $2.8{\times}10^{-4}$ & 1.836 & [1.323,\,2.547] &  \\
+13 & Q84 & ordinal & per step & 0.512 & 0.151 & 3.39 & $7.0{\times}10^{-4}$ & 1.668 & [1.241,\,2.243] &  \\
+14 & Q15 & dummy & Mentioned & -1.020 & 0.175 & -5.81 & $6.1{\times}10^{-9}$ & 0.361 & [0.256,\,0.509] &  \\
+15 & Q137 & ordinal & per step & -0.803 & 0.105 & -7.61 & $2.7{\times}10^{-14}$ & 0.448 & [0.364,\,0.551] &  \\
+16 & Q76 & ordinal & per step & 0.780 & 0.113 & 6.92 & $4.6{\times}10^{-12}$ & 2.180 & [1.748,\,2.719] &  \\
+17 & Q66 & ordinal & per step & 0.595 & 0.117 & 5.08 & $3.8{\times}10^{-7}$ & 1.812 & [1.441,\,2.280] &  \\
+18 & Q134 & ordinal & per step & -0.666 & 0.122 & -5.47 & $4.5{\times}10^{-8}$ & 0.514 & [0.404,\,0.652] &  \\
+19 & Q21 & dummy & Mentioned & 0.507 & 0.239 & 2.12 & 0.034 & 1.661 & [1.039,\,2.654] &  \\
+20 & Q131 & ordinal & per step & 0.867 & 0.116 & 7.45 & $9.5{\times}10^{-14}$ & 2.379 & [1.894,\,2.989] &  \\
+\addlinespace[4pt]
+\multicolumn{9}{l}{\textbf{Cluster 2} \quad \small $n = 2579$ ($n_{\text{in}} = 796$), AIC $= 851.0$, residual deviance $= 809.0$ on 2558 df}\\[2pt]
+ & (Intercept) & intercept & -- & -2.428 & 0.376 & -6.46 & $1.0{\times}10^{-10}$ & 0.088 & [0.042,\,0.184] &  \\
+1 & Q168 & dummy & Yes & -0.922 & 0.285 & -3.24 & 0.001 & 0.398 & [0.227,\,0.695] &  \\
+2 & Q126 & ordinal & per step & -0.923 & 0.142 & -6.51 & $7.3{\times}10^{-11}$ & 0.397 & [0.301,\,0.524] &  \\
+3 & Q167 & dummy & Yes & -0.994 & 0.271 & -3.67 & $2.4{\times}10^{-4}$ & 0.370 & [0.218,\,0.629] &  \\
+4 & Q15 & dummy & Mentioned & -1.674 & 0.301 & -5.56 & $2.7{\times}10^{-8}$ & 0.188 & [0.104,\,0.338] &  \\
+5 & Q117 & ordinal & per step & -0.595 & 0.158 & -3.76 & $1.7{\times}10^{-4}$ & 0.552 & [0.405,\,0.752] &  \\
+6 & Q169 & ordinal & per step & 1.460 & 0.158 & 9.26 & $2.0{\times}10^{-20}$ & 4.308 & [3.163,\,5.868] &  \\
+7 & Q88 & ordinal & per step & -0.879 & 0.145 & -6.07 & $1.3{\times}10^{-9}$ & 0.415 & [0.313,\,0.552] &  \\
+8 & Q82 & ordinal & per step & -0.477 & 0.156 & -3.07 & 0.002 & 0.620 & [0.457,\,0.842] &  \\
+9 & Q130 & ordinal & per step & -1.022 & 0.146 & -7.00 & $2.7{\times}10^{-12}$ & 0.360 & [0.270,\,0.479] &  \\
+10 & Q111 & dummy & Protect environment & 0.755 & 0.198 & 3.81 & $1.4{\times}10^{-4}$ & 2.128 & [1.443,\,3.138] &  \\
+11 & Q11 & dummy & Mentioned & 0.830 & 0.192 & 4.32 & $1.6{\times}10^{-5}$ & 2.293 & [1.573,\,3.341] &  \\
+12 & Q28 & ordinal & per step & 1.012 & 0.160 & 6.34 & $2.3{\times}10^{-10}$ & 2.751 & [2.012,\,3.762] &  \\
+13 & Q173 & ordinal & per step & 1.023 & 0.177 & 5.79 & $7.0{\times}10^{-9}$ & 2.781 & [1.967,\,3.931] &  \\
+14 & Q42 & dummy & Revolutionary change & -0.725 & 0.306 & -2.37 & 0.018 & 0.484 & [0.266,\,0.883] &  \\
+15 & Q127 & ordinal & per step & 0.767 & 0.157 & 4.90 & $9.6{\times}10^{-7}$ & 2.153 & [1.584,\,2.926] &  \\
+16 & Q80 & ordinal & per step & -0.744 & 0.161 & -4.63 & $3.7{\times}10^{-6}$ & 0.475 & [0.347,\,0.651] &  \\
+17 & Q145 & dummy & Yes & -0.726 & 0.271 & -2.68 & 0.007 & 0.484 & [0.284,\,0.823] &  \\
+18 & Q75 & ordinal & per step & -0.504 & 0.159 & -3.17 & 0.002 & 0.604 & [0.442,\,0.825] &  \\
+19 & Q29 & ordinal & per step & 0.753 & 0.158 & 4.76 & $1.9{\times}10^{-6}$ & 2.124 & [1.558,\,2.897] &  \\
+20 & Q154 & dummy & Maintaining order & -0.803 & 0.203 & -3.95 & $7.8{\times}10^{-5}$ & 0.448 & [0.301,\,0.667] &  \\
+\addlinespace[4pt]
+\multicolumn{9}{l}{\textbf{Cluster 3} \quad \small $n = 2579$ ($n_{\text{in}} = 1012$), AIC $= 1629.3$, residual deviance $= 1587.3$ on 2558 df}\\[2pt]
+ & (Intercept) & intercept & -- & -3.045 & 0.358 & -8.51 & $1.8{\times}10^{-17}$ & 0.048 & [0.024,\,0.096] &  \\
+1 & Q167 & dummy & Yes & 0.744 & 0.213 & 3.50 & $4.7{\times}10^{-4}$ & 2.105 & [1.387,\,3.196] &  \\
+2 & Q126 & ordinal & per step & 0.762 & 0.104 & 7.33 & $2.2{\times}10^{-13}$ & 2.144 & [1.748,\,2.628] &  \\
+3 & Q19 & dummy & Mentioned & -1.387 & 0.365 & -3.80 & $1.4{\times}10^{-4}$ & 0.250 & [0.122,\,0.511] &  \\
+4 & Q165 & dummy & Yes & 1.170 & 0.346 & 3.38 & $7.1{\times}10^{-4}$ & 3.223 & [1.637,\,6.348] &  \\
+5 & Q173 & ordinal & per step & -1.017 & 0.143 & -7.11 & $1.2{\times}10^{-12}$ & 0.362 & [0.273,\,0.479] &  \\
+6 & Q168 & dummy & Yes & 0.629 & 0.212 & 2.97 & 0.003 & 1.876 & [1.239,\,2.842] &  \\
+7 & Q64 & ordinal & per step & -0.806 & 0.100 & -8.08 & $6.4{\times}10^{-16}$ & 0.447 & [0.367,\,0.543] &  \\
+8 & Q78 & ordinal & per step & -0.444 & 0.109 & -4.05 & $5.0{\times}10^{-5}$ & 0.642 & [0.518,\,0.795] &  \\
+9 & Q45 & ordinal & per step & -0.627 & 0.116 & -5.41 & $6.3{\times}10^{-8}$ & 0.534 & [0.426,\,0.671] &  \\
+10 & Q73 & ordinal & per step & -0.385 & 0.119 & -3.25 & 0.001 & 0.680 & [0.539,\,0.858] &  \\
+11 & Q137 & ordinal & per step & 0.708 & 0.087 & 8.12 & $4.6{\times}10^{-16}$ & 2.030 & [1.711,\,2.408] &  \\
+12 & Q71 & ordinal & per step & -0.469 & 0.089 & -5.25 & $1.6{\times}10^{-7}$ & 0.626 & [0.525,\,0.745] &  \\
+13 & Q77 & ordinal & per step & -0.324 & 0.121 & -2.66 & 0.008 & 0.724 & [0.570,\,0.918] &  \\
+14 & Q69 & ordinal & per step & -0.478 & 0.098 & -4.89 & $9.9{\times}10^{-7}$ & 0.620 & [0.512,\,0.751] &  \\
+15 & Q116 & ordinal & per step & -0.553 & 0.130 & -4.26 & $2.0{\times}10^{-5}$ & 0.575 & [0.446,\,0.742] &  \\
+16 & Q59 & ordinal & per step & -0.409 & 0.103 & -3.96 & $7.6{\times}10^{-5}$ & 0.665 & [0.543,\,0.814] &  \\
+17 & Q154 & dummy & Maintaining order & 0.484 & 0.135 & 3.59 & $3.3{\times}10^{-4}$ & 1.622 & [1.246,\,2.113] &  \\
+18 & Q157 & dummy & Fight against crime & 0.546 & 0.133 & 4.11 & $4.0{\times}10^{-5}$ & 1.727 & [1.331,\,2.240] &  \\
+19 & Q131 & ordinal & per step & -0.503 & 0.105 & -4.77 & $1.8{\times}10^{-6}$ & 0.605 & [0.492,\,0.743] &  \\
+20 & Q144 & dummy & Yes & -0.805 & 0.222 & -3.63 & $2.8{\times}10^{-4}$ & 0.447 & [0.289,\,0.690] &  \\
+\multicolumn{9}{p{0.95\linewidth}}{\footnotesize \emph{Notes:} regressors selected by one-vs-rest LASSO ($\lambda_{1\text{se}}$) and refitted without penalty; $p$-values are therefore descriptive, not inferential. Ordinal variables enter as a single score, so the estimate is the effect of one step along the scale; the direction of each scale is given in Table~\ref{tab:ordinal-scales}. Dummy contrasts are read against the neutral reference category. Shaded rows have $p \geq 0.05$. All models converged.}\\
+\end{longtable}
+\endgroup
+\end{landscape}

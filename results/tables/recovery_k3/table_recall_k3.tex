@@ -1,0 +1,27 @@
+\begin{table}[H]
+\centering
+\caption{Per-cluster recall at $k=3$ on the full sample, under LASSO-penalised multinomial regression. Recall is the share of a cluster's true members correctly identified. Cluster labels are Hungarian-aligned to KM-PC5, so they denote the same three positions across configurations.}
+\label{tab:per-class}
+\small
+\begin{tabular}{llcccc}
+\toprule
+Configuration & Cluster & $n$ & Political & Sociodem. & Both \\
+\midrule
+KM-PC2 & Disaffected & 771 & 0.553 & 0.577 & 0.601 \\
+ & Secular  & 796 & 0.791 & 0.557 & 0.803 \\
+ & Religious & 1012 & 0.720 & 0.666 & 0.736 \\
+\addlinespace
+KM-PC5 & Disaffected & 705 & 0.565 & 0.556 & 0.620 \\
+ & Secular  & 826 & 0.798 & 0.577 & 0.801 \\
+ & Religious & 1048 & 0.738 & 0.696 & 0.754 \\
+\addlinespace
+KM-UMAP & Disaffected & 643 & 0.541 & 0.523 & 0.605 \\
+ & Secular  & 945 & 0.799 & 0.629 & 0.803 \\
+ & Religious & 991 & 0.706 & 0.638 & 0.731 \\
+\addlinespace
+PAM & Disaffected & 814 & 0.500 & 0.509 & 0.514 \\
+ & Secular  & 847 & 0.724 & 0.569 & 0.749 \\
+ & Religious & 918 & 0.584 & 0.535 & 0.611 \\
+\bottomrule
+\end{tabular}
+\end{table}
