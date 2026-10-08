@@ -1,0 +1,18 @@
+cff-version: 1.2.0
+message: "If you use this code, please cite the thesis below."
+title: "Measuring cultural polarization across social groups: replication code"
+type: software
+license: MIT
+authors:
+  - family-names: Caudullo
+    given-names: Egle
+preferred-citation:
+  type: thesis
+  thesis-type: "Master's thesis"
+  title: "Measuring cultural polarization across social groups: a machine learning classification approach"
+  authors:
+    - family-names: Caudullo
+      given-names: Egle
+  institution:
+    name: "ENSAI (École nationale de la statistique et de l'analyse de l'information)"
+  year: 2026
